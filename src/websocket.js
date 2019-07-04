@@ -7,6 +7,7 @@
 
 /* global window, clearTimeout, WebSocket, DOMParser */
 
+import { DOMParser, WebSocket } from './shims';
 import core from './core';
 
 const Strophe = core.Strophe;

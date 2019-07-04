@@ -42,7 +42,7 @@
   "unpkg": "dist/strophe.umd.min.js",
   "scripts": {
     "build": "rollup -c",
-    "lint": "make jshint",
+    "lint": "make eslint",
     "clean": "make clean",
     "doc": "make doc",
     "prepare": "yarpm run build"
@@ -69,9 +69,15 @@
     "rollup-plugin-node-resolve": "^5.0.0",
     "rollup-plugin-uglify": "^6.0.2",
     "run-headless-chromium": "^0.1.1",
-    "sinon": "1.17.7",
-    "sinon-qunit": "~2.0.0",
+    "sinon": "^2.4.1",
+    "sinon-qunit": "^2.0.0",
     "yarpm": "^0.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "abab": "^2.0.0"
+  },
+  "optionalDependencies": {
+    "ws": "^7.0.0",
+    "xmldom": "^0.1.27"
+  }
 }
